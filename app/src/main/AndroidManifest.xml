@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.stopgroup.stopcar.client">
+
+    <uses-sdk tools:overrideLibrary="com.rtchagas.pingplacepicker" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:name="androidx.multidex.MultiDexApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:allowBackup,android:name">
+        <activity android:name=".activity.ArriaveActivity"></activity>
+        <activity
+            android:name=".activity.Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.RegActivity" />
+        <activity android:name=".activity.CustomerSupport" />
+        <activity android:name=".activity.PaymentActivity" />
+        <activity android:name=".activity.AdActivity" />
+        <activity android:name=".activity.VerifyMobileActivity" />
+        <activity android:name=".activity.ForgetPassActivity" />
+        <activity android:name=".activity.HomeActivity" />
+        <activity android:name=".activity.SendOrderActivity" />
+        <activity android:name=".activity.VisaActivity" />
+        <activity android:name=".activity.ContactUsActivity" />
+        <activity android:name=".activity.BankAccountActivity" />
+
+        <service android:name=".service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activity.CarOrderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".activity.UpdatepaymentActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCJTFD3_ou87p7961rq7ao_Wwp7S7E_VPM" />
+
+        <activity android:name=".activity.ReviewTripActivity" />
+        <activity android:name=".activity.SettingsActivity" />
+        <activity android:name=".activity.EmergencyContactsActivity" />
+        <activity android:name=".activity.BookingConfirmationActivity" />
+        <activity android:name=".activity.ProfileActivity" />
+        <activity android:name=".activity.ChoosePaymentActivity" />
+        <activity android:name=".activity.SelectcarActivity" />
+        <activity android:name=".activity.SubcarActivity" />
+        <activity android:name=".activity.SubwaterActivity" />
+        <activity android:name=".activity.HelpActivity" />
+        <activity android:name=".activity.HistoryActivity" />
+        <activity android:name=".activity.RequestActivity" />
+        <activity android:name=".activity.ContactActivity" />
+        <activity android:name=".activity.EditActivity" />
+        <activity android:name=".activity.SosActivity" />
+        <activity android:name=".activity.ResetPasswordActivity" />
+        <activity android:name=".activity.EditlocActivity" />
+        <activity android:name=".activity.AddlocActivity" />
+        <activity android:name=".activity.EditdestinationActivity" />
+        <activity android:name=".activity.NotActivity" />
+        <activity android:name=".activity.CompanyDetailsActivity" />
+        <activity android:name=".activity.CompaniesActivity" />
+        <activity android:name=".activity.WebviewActivity" />
+        <activity android:name=".activity.ChangepaymentActivity" />
+        <activity android:name=".activity.CurrentTripsActivity" />
+    </application>
+</manifest>

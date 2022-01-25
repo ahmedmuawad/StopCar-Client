@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1671b8</color>
+    <color name="colorPrimaryDark">#003660</color>
+    <color name="color_black">#1671b8</color>
+
+    <color name="sent_color">#0099ff</color>
+    <color name="received_color">#e9ebee</color>
+
+    <color name="colorAccent">#1671b8</color>
+    <color name="color_white">#ffffff</color>
+    <color name="cardview">#393939</color>
+    <color name="black">#1671b8</color>
+    <color name="green">#1671b8</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray">#E1E3E4</color>
+    <color name="graydark">#9c9d9e</color>
+    <color name="blue">#000085</color>
+    <color name="lightgray">#F0F5F8</color>
+</resources>

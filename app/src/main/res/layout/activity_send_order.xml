@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SendOrderActivity">
+
+    <include layout="@layout/layout_back1" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="10dp">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:src="@drawable/ic_add" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="@color/color_white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="4dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp">
+
+
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="90dp"
+                             android:scaleType="centerCrop"
+                            android:src="@color/gray" />
+
+
+                        <TextView
+                            android:id="@+id/from"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                          android:gravity="start|center"
+                            android:hint="@string/from"
+                            android:paddingEnd="10dp"
+                            android:paddingStart="10dp" />
+
+                        <TextView
+                            android:id="@+id/to"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                          android:gravity="start|center"
+                            android:hint="@string/to"
+                            android:paddingEnd="10dp"
+                            android:paddingStart="10dp" />
+
+
+                        <EditText
+                            android:id="@+id/type_of_goods"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                          android:hint="@string/type_of_good"
+                            android:paddingEnd="10dp"
+                            android:paddingStart="10dp" />
+
+
+                        <EditText
+                            android:id="@+id/notes"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="10dp"
+                          android:hint="@string/notes"
+                            android:paddingEnd="10dp"
+                            android:paddingStart="10dp" />
+
+
+
+
+                        <EditText
+                            android:id="@+id/reassemble"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                          android:hint="@string/number_of_reassemble"
+                            android:phoneNumber="true"
+                            android:paddingEnd="10dp"
+                            android:paddingStart="10dp" />
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"
+                            android:paddingEnd="10dp"
+                            android:paddingStart="10dp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </FrameLayout>
+
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                xmlns:fancy="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/send"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:layout_gravity="end"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginBottom="20dp"
+                fancy:fb_borderColor="@color/colorPrimary"
+                fancy:fb_borderWidth="1dp"
+                fancy:fb_defaultColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                fancy:fb_focusColor="@color/colorPrimaryDark"
+                fancy:fb_radius="30dp"
+                fancy:fb_text="@string/Sendtherequest"
+                fancy:fb_textColor="#FFFFFF" />
+
+      
+        </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

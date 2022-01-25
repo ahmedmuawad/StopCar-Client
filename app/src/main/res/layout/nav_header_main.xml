@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/view_container"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/head1"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_image_imv"
+            android:layout_width="70dp"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="1dp"
+       android:src="@drawable/carlogo"
+            android:layout_height="70dp"
+            />
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:id="@+id/user_name_txv"
+            android:textColor="@color/color_white"
+            android:text="Kareem"
+            android:textSize="17sp"
+            android:fontFamily="@font/fofo12"
+            style="@style/MediumText"/>
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/user_email_txv"
+            android:textColor="#D0FFFFFF"
+            android:text="@string/edit_profile"
+            style="@style/SmallText"/>
+
+    </LinearLayout>
+
+</FrameLayout>

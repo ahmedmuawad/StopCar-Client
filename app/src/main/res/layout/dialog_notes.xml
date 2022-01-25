@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+
+    <EditText
+
+        android:textStyle="bold"
+        android:gravity="top"
+        android:layout_marginTop="30dp"
+        android:hint="@string/notes"
+        android:background="@drawable/text_shape"
+        android:id="@+id/notes"
+        android:padding="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="140dp" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/send"
+        xmlns:fancy="http://schemas.android.com/apk/res-auto"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        fancy:fb_borderColor="@color/colorPrimary"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="@color/white"
+        fancy:fb_focusColor="@color/colorPrimaryDark"
+        fancy:fb_radius="3dp"
+        fancy:fb_text="@string/Sendtherequest"
+        fancy:fb_textColor="@color/colorPrimary" />
+
+
+
+</LinearLayout>

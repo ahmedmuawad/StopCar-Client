@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_back" />
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/mainLinear"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/security" />
+
+
+        <TextView
+            style="@style/MediumText"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/fofo12"
+            android:text="@string/lets_make_travel"
+          />
+
+
+        <TextView
+            style="@style/MediumText"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
+            android:text="@string/easily_let_your_friends"
+       />
+
+
+    </LinearLayout>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:visibility="gone"
+    android:layout_margin="6dp"
+    android:id="@+id/list"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+
+</androidx.recyclerview.widget.RecyclerView>
+
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            app:fb_borderColor="@color/colorPrimary"
+            app:fb_borderWidth="8dp"
+            app:fb_defaultColor="#EDEBFD"
+            app:fb_focusColor="@color/colorPrimaryDark"
+            app:fb_radius="30dp"
+            app:fb_text=""
+            app:fb_textColor="@color/colorPrimary" />
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/fofo12"
+            android:text="@string/add_contact" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/new_trip"
+            android:icon="@drawable/ic_baseline_electric_car_24"
+            android:title="@string/new_trip" />
+        <item
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/ic_baseline_payments_24"
+            android:title="@string/payment" />
+
+        <item
+            android:id="@+id/nav_current_trips"
+            android:icon="@drawable/ic_baseline_directions_car_24"
+            android:title="@string/current_trips"
+            />
+
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_baseline_history_24"
+            android:title="@string/history" />
+
+        <item
+            android:id="@+id/contact_us"
+            android:icon="@drawable/ic_baseline_contact_phone_24"
+            android:title="@string/contactus" />
+
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/ic_baseline_notifications_active_24"
+            android:title="@string/notifications" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="@string/settings" />
+
+
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_baseline_privacy_tip_24"
+            android:title="@string/help" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            android:title="@string/logout" />
+
+
+    </group>
+
+</menu>
